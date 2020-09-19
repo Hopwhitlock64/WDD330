@@ -1,0 +1,26 @@
+label{
+    display: block;
+}
+header{
+ background-color: coral;
+ color: black;
+ border: 2px solid black;
+ text-align: center;
+}
+h3{
+    text-align: center;
+    font-style: italic;
+}
+a:active{
+    color: turquoise
+}
+a:visited{
+    color: blue;
+}
+li a{
+    color: black;
+}
+li{
+    padding: .5em;
+    list-style: none;
+}
