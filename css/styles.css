@@ -18,7 +18,8 @@ a:visited{
     color: blue;
 }
 li a{
-    color: black;
+    color: coral;
+    text-align: center;
 }
 li{
     padding: .5em;
