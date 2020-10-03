@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet"> 
+    <title>WDD 330 Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>WDD330 Portfolio</h1>
+        <h2>Week 3</h2>
+    </header>
+    <nav class = "contentLinks">
+        <ul>
+            <li><a href = "index.html">Table of Contents</a></li>
+            <li><a href = "week1index.html">Week 1</a></li>
+            <li><a href = "week2.html">Week 2</a></li>
+        </ul>
+    </nav>
+   <ul>
+    <h3>Notes</h3> 
+        <p>I had known about document.getElementById but didn't know about TagName or Classname. Basically, it returns the object based on the Tagname given. 
+            A tag can be li, ul, section, etc. Ex. const listItems = document.getElementsByTagName('li'); I guess I would use this if I wasn't needing to call a specific object and instead call a group of objects. From what I gathered from the reading, TagName and ClassName do the same thing, in that they call a collection of objects instead of a single one. So you could proably go any way. 
+            Though I would probably use a TagName over ClassName since it would less tedious since you would have to label so many objects with a Class.
+             I'm used to accessing properties by dot notation (Ex: person.name) that I didn't realize you could access it using square brackets Ex: person ['name']. It seems that bracket notation allows you more flexibility in naming properties and objects. But I feel like that could also be confusing and get out of hand, so I guess it depends.  </p>
+      <p>During the Team activity this week we referenced the JavaScript 30 video's and I noticed that instead of doing an if else, he wrote a shorthand like this:
+           return lastPerson > nextPerson ? -1 : 1;  Which I found out that ? means If that is true and : means otherwise do this. I feel like I have seen this before, but I can remember where. But I thought, that's cool and nice. It certainly saves more lines of code. I think I'm going to start doing this from now on.</p>
+
+       </li>
+   </ul> 
+   <div class = "questions">
+    <h2>Questions</h2>
+    <ul>
+        <li> What are Node Lists? </li>
+        <li> What is a node? </li>
+    </ul> 
+   </div>   
+</body>
+<script src = "js/main.js"></script>
+</html>
