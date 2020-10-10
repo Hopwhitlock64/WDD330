@@ -16,9 +16,9 @@ h1, h2, h3, h4{
     font-family: 'Sansita Swashed', cursive;
 }
 .contentLinks a:visited{
-    color: #2B2D42;
+    color: #D90429;
 }
-.contentLinks li a{
+.contentLinks li{
     color: #D90429;
     text-align: center;
     list-style: none;
@@ -40,10 +40,11 @@ p{
     padding: .5em;
     list-style: none;
     text-align: center;
+    color: #2B2D42;
 }
-li{
+.notes li{
     padding: .5em;
-    list-style: none;
+    list-style: disc;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #2B2D42;
