@@ -1,0 +1,13 @@
+table{
+    border: 5px solid black;
+    width: 100%;
+    justify-content: center;
+}
+.tr:nth-child(1){
+ border-right: 2em solid black;
+ border-bottom: 2em solid black;
+}
+.tr:nth-child(3){
+    border-right: 2em solid black;
+    border-bottom: 2em solid black;
+   }

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap');
+/*phone, mobile first */
+.navigation a {
+  color: white;
+} 
+.navigation :hover {
+  color: #1C2541;
+} 
+.navigation ul{
+  list-style: none; /* removes the bullets! */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  margin: 0;
+  padding: 0;
+  background-color: #5BC0BE;
+  grid-row: 1/2;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+  font-family: 'Acme', sans-serif;
+}
+
+li {
+float: left;
+}
+
+.content{
+  max-width: 1200px;
+  margin: auto;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  background-color: white;
+}
+.banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner h1{
+  font-family: 'Acme', sans-serif;
+  position: absolute;
+  color: #0B132B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner img{
+  opacity: 50%;
+}
+
+/* break alarm */
+#alarm {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 10px;
+  background: white;
+  white-space: nowrap;
+}
+#alarm-h, #alarm-m, #alarm-s {
+  display: inline-block;
+  width: 32%;
+}
+#alarm select {
+  box-sizing: padding-box;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+#alarmSet, #alarmReset {
+  box-sizing: padding-box;
+  width: 50%;
+  background: #3A506B;
+  color: white;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+}
+#alarmSet:disabled, #alarmReset:disabled {
+  background: #6FFFE9;
+  color: #0B132B;
+}
