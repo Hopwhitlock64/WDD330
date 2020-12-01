@@ -15,7 +15,7 @@ console.log('current date'+ Date.now());
 console.log('alarm time'+ alarmTime.getTime());
 console.log(differenceinTime);
 if(alarmTime.getTime() < 0){
-  alert('specified time had alread passed!');
+  alert('Time had alread passed!');
   return;
 }
 var times;
