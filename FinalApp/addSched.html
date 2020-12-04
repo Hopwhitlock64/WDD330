@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href ="css/styles.css" rel = "stylesheet">
+   
     <title>Add Schedule</title>
 </head>
 <body>
@@ -11,17 +12,21 @@
         <ul>
             <!-- <li><a href="#">&#9776;Menu</a></li> -->
             <a href="index.html" class = "active"></i>Home</a>
-            <li class = "dropdown"> <a href="javascript:void(0)" class="dropbtn">Breaks</a>
+            <li class = "dropdown"> <a href="javascript:void(0)" class="dropbtn">Alarm</a>
                 <div class="dropdown-content">
-                  <a href="addBreak.html">Edit</a>
-                  <a href="editBreak.html">Add</a>
+                  <a href="addBreak.html">add</a>
                         </div>
             <li class = "dropdown"> <a href="javascript:void(0)" class="dropbtn">Schedules</a>
                             <div class="dropdown-content">
-                              <a href="editSched.html">Edit</a>
                               <a href="addSched.html">Add</a>
                         </div>
         </ul>
     </nav>
+    <div>
+        <ul id="schedules">
+
+        </ul>
+        </div>
 </body>
+<script src = "schedules.js"></script>
 </html>

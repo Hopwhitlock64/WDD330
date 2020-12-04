@@ -1,6 +1,13 @@
 // alarm sound
 var alarmSound = new Audio();
-alarmSound.src = document.getElementById('sound');
+alarmSound.src = 'mandalorian_theme.mp3';
+console.log(document.getElementById('sound').value);
+function changeSound(){
+  var select = document.getElementById('sound').value;
+  document.getElementById('sound').innerHTML = select;
+  alarmSound.play();
+
+}
 
 //main functions
 function setAlarm(button){
@@ -15,29 +22,23 @@ console.log('current date'+ Date.now());
 console.log('alarm time'+ alarmTime.getTime());
 console.log(differenceinTime);
 if(alarmTime.getTime() < 0){
-  alert('Time had alread passed!');
+  alert('Time had already passed!');
   return;
 }
-var times;
-if(times = localStorage.getItem('arrayTimes')){
+var times = [];
+if(times = JSON.parse(localStorage.getItem('arrayTimes'))){
   console.log(times);
 } else{
   times = [];
 }
 times.push(alarmTime);
-JSON.stringify(localStorage.setItem('arrayTimes', times));
+localStorage.setItem('arrayTimes', JSON.stringify(times));
 
 
 setTimeout(initAlarm, differenceinTime);
 
-button.innerHTML = 'Cancel Alarm';
-button.setAttribute('onclick', 'cancelAlarm(this);');
+}
 
-}
-function cancelAlarm(button){
-  button.innerHTML = 'Set Alarm';
-  button.setAttribute('onclick', 'setAlarm(this);');
-}
 
 function initAlarm(){
   alarmSound.play();
