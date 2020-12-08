@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap');
 /*phone, mobile first */
 .navigation a {
-  color: white;
+  color: #F4F7F5;
+  padding: 10px;
+  text-align: center;
 } 
-.navigation :hover {
-  color: #1C2541;
+a:hover {
+  color: black;
+  background-color: #F3B61F;
+  width: 50%;
 } 
 .navigation ul{
   list-style: none; /* removes the bullets! */
@@ -12,7 +16,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   margin: 0;
   padding: 0;
-  background-color: #5BC0BE;
+  background-color: #6A0F49;
+  color: #F4F7F5;
   grid-row: 1/2;
   height: 50px;
   overflow: hidden;
@@ -23,43 +28,16 @@
 /* li {
 float: left;
 } */
-li a, .dropbtn {
-  display: inline-block;
-  color: #686963;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #686963;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #5BC0BE;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
+.removeBtn{
+  margin-left: 20px;
+  background-color: #F3B61F;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+#itemTitle{
+  margin: 10px;
 }
 
 .content{
@@ -71,14 +49,14 @@ body {
   padding: 5px 25px;
   font-size: 18px;
   margin: 0;
-  background-color: whitesmoke;
+  background: url("studybooksbanner.jpg");
 }
 .banner{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 20px;
+  padding-top: 10px;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -110,19 +88,19 @@ body {
 }
 .breakAlarm select{
   width: 25%;
-  background-color: #3A506B;
-  color: white;
+  background-color: #F3B61F;
+  color: #6A0F49;
   height: 3em;
 }
 .breakAlarm select:hover{
   width: 25%;
-  background-color: #5BC0BE;
-  color: #3A506B;
+  background-color: #6A0F49;
+  color: #F3B61F;
 }
 /* alarm */
 #alarmButton{
-  background-color: #0B132B;
-  color: white;
+  background-color: #6A0F49;
+  color:white;
   padding: 12px 28px;
   font-size: 15px;
   margin-left: 2em;
@@ -131,16 +109,38 @@ body {
 
 }
 #stopBtn{
-  background-color: #6FFFE9;
-  color: #0B132B;
+  background-color: #6A0F49;
+  color: white;
   font-size: 15px;
   border-radius: 4px;
   padding: 14px 40px;
 }
 #snoozeBtn{
-background-color: #3A506B;
-color: white;
+background-color: #F3B61F;
+color: #6A0F49;
 font-size: 15px;
 border-radius: 4px;
 padding: 14px 40px;
 }
+
+/* clock */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.time {
+  color: #6A0F49;
+  padding: 8px;
+  padding-top: 30%;
+  text-align: center;
+}
+.hms {
+  font-size: 48pt;
+  font-weight: 200;
+}
+.ampm {
+  font-size: 12pt;
+}
+.date {
+  font-size: 20px;
+}
+
