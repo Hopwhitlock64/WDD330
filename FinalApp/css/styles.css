@@ -7,7 +7,7 @@
 } 
 a:hover {
   color: black;
-  background-color: #F3B61F;
+  background-color: #FF0000;
   width: 50%;
 } 
 .navigation ul{
@@ -16,7 +16,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   margin: 0;
   padding: 0;
-  background-color: #6A0F49;
+  background-color: #BA0C0C;
   color: #F4F7F5;
   grid-row: 1/2;
   height: 50px;
@@ -30,14 +30,16 @@ float: left;
 } */
 .removeBtn{
   margin-left: 20px;
-  background-color: #F3B61F;
-  color: black;
+  background-color: #BA0C0C;
+  color: white;
   border-radius: 15px;
   font-size: 20px;
   padding: 5px;
 }
-#itemTitle{
-  margin: 10px;
+#alarmHead{
+text-align: center;
+font-family: 'Acme', sans-serif;
+color:  black; 
 }
 
 .content{
@@ -49,7 +51,7 @@ body {
   padding: 5px 25px;
   font-size: 18px;
   margin: 0;
-  background: url("studybooksbanner.jpg");
+  background: white;
 }
 .banner{
   display: grid;
@@ -76,30 +78,67 @@ body {
   text-align: center;
   justify-content: space-between;
   padding-top: 2em;
-  padding-bottom: 2em;
+  margin: 2em;
 }
+
 .breakAlarm label{
- padding-right: 1em;
+ padding:2em;
+ margin: 1em;
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ color: #BA0C0C;
+}
+.breakAlarm input[type=text]{
+  margin-bottom: 2em;
+  width: 20%;
+  border: none;
+  border-bottom: 2px solid  black;
+  width: 25%;
 }
 .breakAlarm input{
   margin-bottom: 2em;
   width: 20%;
-
+  border: 2px solid  black;
+}
+.breakAlarm textarea{
+  width: 25%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid  black;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
 }
 .breakAlarm select{
   width: 25%;
-  background-color: #F3B61F;
-  color: #6A0F49;
+  background-color: #2A850E;
+  color: white;
   height: 3em;
+  font-family: 'Montserrat', sans-serif;
 }
 .breakAlarm select:hover{
   width: 25%;
-  background-color: #6A0F49;
-  color: #F3B61F;
+  background-color: white;
+  color: black;
+}
+h4{
+  color: black;
+  font-family: 'Acme', sans-serif;
 }
 /* alarm */
 #alarmButton{
-  background-color: #6A0F49;
+  background-color: #27A300;
+  color:white;
+  padding: 12px 28px;
+  font-size: 15px;
+  margin-left: 2em;
+  margin-top: 2em;
+  border-radius: 12px;
+
+}
+#alarmButton:hover{
+  background-color:  #2D661B;
   color:white;
   padding: 12px 28px;
   font-size: 15px;
@@ -109,15 +148,15 @@ body {
 
 }
 #stopBtn{
-  background-color: #6A0F49;
+  background-color: #FF0000;
   color: white;
   font-size: 15px;
   border-radius: 4px;
   padding: 14px 40px;
 }
 #snoozeBtn{
-background-color: #F3B61F;
-color: #6A0F49;
+background-color: black;
+color: #FF0000;
 font-size: 15px;
 border-radius: 4px;
 padding: 14px 40px;
@@ -128,7 +167,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .time {
-  color: #6A0F49;
+  color: #FF0000;
   padding: 8px;
   padding-top: 30%;
   text-align: center;

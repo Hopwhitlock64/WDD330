@@ -57,3 +57,6 @@ function snooze(){
   stopAlarm();
   setTimeout(initAlarm, 36000); 
 }
+
+
+ 

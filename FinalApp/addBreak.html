@@ -17,23 +17,22 @@
                   <a  href="addSched.html">Schedules</a>                
         </ul>
     </nav>
-    <div id="MyClockDisplay" class="clock" onload="showTime()">
-    </div>
+  <h2 id = "alarmHead" >Create an Alarm</h2>
             <div class = "breakAlarm">
-                <label class = "label">Title</label>
+                <label class = "label">Title:</label>
                 <input type = "text" id = "title" /><br>
-                <label class = "label">Date</label>
+                <label class = "label">Date:</label>
                 <input type = "date" id = "alarmDate" /><br> 
                 <label class = "label">Hr : MM  AM/PM</label>
                 <input type = "time" id = "alarmTime" /><br>
                 <label class = "label">Notes</label>
-                <input type = "textarea" id = "notes" /><br>
+                <textarea id = "notes"></textarea><br>
                 <button onclick = "setAlarm(this)" id= "alarmButton">Set Alarm</button>
 
                 <div id = "alarmOptions" style = "display:none;">
                 <button onclick = "snooze();" id = "snoozeBtn">Snooze 5 Minutes</button>
                 <button onclick = "stopAlarm();" id = "stopBtn">Stop</button>
-            </div>
+                </div>
            
             <h4>Choose alarm sound</h4>
             <select onchange = "changeSound()" id = "sound">
