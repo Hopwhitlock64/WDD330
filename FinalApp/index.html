@@ -6,31 +6,31 @@
     <link href ="css/styles.css" rel = "stylesheet">
     <title>Study Break</title>
 </head>
+<nav class = "navigation">
+    <ul>
+        <!-- <li><a href="#">&#9776;Menu</a></li> -->
+        <a href="index.html" ></i>Home</a>
+              <a  href="addBreak.html">Add Alarm</a>
+              <a class = "active" href="addSched.html">Current Alarms</a>                
+    </ul>
+</nav>
 <body>
-    <div class = "content">
-
-
-    </div>
-    <nav class = "navigation">
-        <ul>
-            <!-- <li><a href="#">&#9776;Menu</a></li> -->
-            <a href="index.html" ></i>Home</a>
-                  <a  href="addBreak.html">Alarm</a>
-                  <a class = "active" href="addSched.html">Schedules</a>                
-        </ul>
-    </nav>
-    <div class = "banner">
         <h1>Study Break</h1>
-        <img src = "studybooksbanner.jpg" style = "width: fit-content;">
-    </div>
-    <div class="time">
-        <span class="date"></span>
-        <br>
-        <span class="hms"></span>
-        <span class="ampm"></span>
-        <!-- <br>
-        <span class="date"></span> -->
-      </div>
+        <div class="time">
+            <span class="date"></span>
+            <br>
+            <span class="hms"></span>
+            <span class="ampm"></span>
+            <!-- <br>
+            <span class="date"></span> -->
+          </div>
+    <div class = "homeButtons">
+        <h3>Are you forgetful? Click below to add an alarm</h3>
+          <a href="addBreak.html">Add</a>
+          <h3>Click below to view existing alarm's</h3>
+          <a href="addSched.html">View</a> 
+    </div> 
+       
 </body>
 <script src = "clock.js"></script>
 </html>

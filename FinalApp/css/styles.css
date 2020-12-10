@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap');
 /*phone, mobile first */
+html{
+  height: 100%;
+}
 .navigation a {
   color: #F4F7F5;
   padding: 10px;
@@ -24,6 +27,26 @@ a:hover {
   border-radius: 5px;
   font-family: 'Acme', sans-serif;
 }
+.homeButtons{
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10%;
+}
+.homeButtons h3{
+  color: #2A850E;
+}
+.homeButtons a{
+  background-color: #FF0000;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.homeButtons a:hover{
+  background-color: white;
+  color: #FF0000;
+  border: 2px solid #FF0000;
+}
 
 /* li {
 float: left;
@@ -43,36 +66,29 @@ color:  black;
 }
 
 .content{
-  max-width: 1200px;
-  margin: auto;
+ text-align:center;
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  padding: 5px 25px;
+ justify-content: space-evenly;
   font-size: 18px;
-  margin: 0;
-  background: white;
+  margin: auto;
+  background-image:url("../openbook.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  height: 100%;
 }
-.banner{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 10px;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.banner h1{
+h1{
   font-family: 'Acme', sans-serif;
-  position: absolute;
-  color: #0B132B;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  padding-top: 2em;
+ 
 }
-.banner img{
-  opacity: 50%;
-}
+
 .breakAlarm{
   align-items: center;
   text-align: center;
@@ -122,6 +138,7 @@ body {
   background-color: white;
   color: black;
 }
+ /* alarm heading */
 h4{
   color: black;
   font-family: 'Acme', sans-serif;
@@ -169,7 +186,8 @@ body {
 .time {
   color: #FF0000;
   padding: 8px;
-  padding-top: 30%;
+  /* padding-top: 5%; */
+  margin-bottom: 1em;
   text-align: center;
 }
 .hms {
@@ -183,3 +201,8 @@ body {
   font-size: 20px;
 }
 
+#schedules{
+  text-align: left;
+  padding-left: 20%;
+  justify-content: space-between;
+}
